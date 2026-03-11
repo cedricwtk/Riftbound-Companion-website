@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Riftbound Companion — Track matches, build decks, browse the full card database, and manage trades. The free companion app for Riftbound players on Android.">
+  <meta property="og:title" content="Riftbound Companion">
+  <meta property="og:description" content="Track matches. Build decks. Browse every card. Free on Google Play.">
+  <meta property="og:type" content="website">
+  <title>Riftbound Companion — The Ultimate Card Game Companion App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner container">
+
+      <a href="#hero" class="navbar__logo" aria-label="Riftbound Companion — back to top">
+        <img src="assets/adaptive-icon.png" class="navbar__logo-icon" alt="" aria-hidden="true">
+        <span class="navbar__logo-text">Riftbound <span class="navbar__logo-sub">Companion</span></span>
+      </a>
+
+      <ul class="navbar__links" id="navbar-links" role="list">
+        <li><a href="#features"    class="navbar__link" data-section="features">Features</a></li>
+        <li><a href="#screenshots" class="navbar__link" data-section="screenshots">In Action</a></li>
+        <li><a href="#pricing"     class="navbar__link" data-section="pricing">Pricing</a></li>
+        <li><a href="#download"    class="navbar__link" data-section="download">Download</a></li>
+      </ul>
+
+      <a href="#download" class="btn btn--gold navbar__cta">Download Free</a>
+
+      <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-links">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero" aria-label="Hero — Riftbound Companion">
+
+    <div class="hero__bg-layer" aria-hidden="true">
+      <div class="hero__embers"></div>
+      <div class="hero__orb hero__orb--gold"></div>
+      <div class="hero__orb hero__orb--purple"></div>
+      <div class="hero__grid-overlay"></div>
+    </div>
+
+    <div class="hero__content container">
+      <p class="hero__eyebrow">The Ultimate Companion for</p>
+
+      <h1 class="hero__title">
+        <span class="hero__title-main">Riftbound</span>
+        <span class="hero__title-accent">Companion</span>
+      </h1>
+
+      <p class="hero__tagline">
+        Track matches. Build decks. Browse every card.<br>
+        Free on Google Play.
+      </p>
+
+      <div class="hero__badges">
+        <a href="#" class="store-badge store-badge--lg store-badge--hero" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg" class="store-badge__svg" aria-hidden="true">
+            <rect width="150" height="40" rx="6" fill="#12121a" stroke="#c9a84c" stroke-width="1"/>
+            <path d="M10 30L22 16.5 10 3v27z" fill="#c9a84c" opacity="0.6"/>
+            <path d="M26 20l-4 4-12-14 16 10z" fill="#c9a84c" opacity="0.9"/>
+            <path d="M26 20l-4-4-12 14 16-10z" fill="#c9a84c"/>
+            <path d="M10 3l16 17-4 0L10 3z" fill="#c9a84c" opacity="0.8"/>
+            <text x="36" y="14" font-family="Inter, sans-serif" font-size="7" fill="#8a8a9a" font-weight="400">Get it on</text>
+            <text x="36" y="27" font-family="Inter, sans-serif" font-size="13" fill="#f0ead6" font-weight="600">Google Play</text>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <span class="scroll-cue__line"></span>
+        <span class="scroll-cue__text">Scroll to explore</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== AUDIENCE ===================== -->
+  <section id="audience" class="audience section">
+    <div class="container">
+
+      <header class="section-header" data-animate="fade-up">
+        <p class="section-header__label">Who It's For</p>
+        <h2 class="section-header__title">Built for Every Kind of Player</h2>
+        <p class="section-header__body">From kitchen table games to local tournaments — Riftbound Companion has a tool for every playstyle.</p>
+      </header>
+
+      <div class="audience__grid">
+
+        <article class="audience-card" data-animate="fade-up">
+          <div class="audience-card__icon-wrap" aria-hidden="true">
+            <svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7z"/>
+            </svg>
+          </div>
+          <h3 class="audience-card__title">Competitive Players</h3>
+          <p class="audience-card__body">Track win rates by legend and battlefield, review matchups against specific opponents, and dig into performance data with advanced analytics.</p>
+        </article>
+
+        <article class="audience-card" data-animate="fade-up">
+          <div class="audience-card__icon-wrap" aria-hidden="true">
+            <svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="audience-card__title">Local Scene Players</h3>
+          <p class="audience-card__body">Built for game stores and local meetups. Select legends, run Best-of-3 matches, and keep a full record of every game you play in person.</p>
+        </article>
+
+        <article class="audience-card" data-animate="fade-up">
+          <div class="audience-card__icon-wrap" aria-hidden="true">
+            <svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3 class="audience-card__title">Deck Builders &amp; Theory-Crafters</h3>
+          <p class="audience-card__body">Build validated decks with domain-locked filtering and analytics. See your rune curve, power distribution, and card type breakdown before you sit down to play.</p>
+        </article>
+
+        <article class="audience-card" data-animate="fade-up">
+          <div class="audience-card__icon-wrap" aria-hidden="true">
+            <svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="17 1 21 5 17 9"/>
+              <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+              <polyline points="7 23 3 19 7 15"/>
+              <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+            </svg>
+          </div>
+          <h3 class="audience-card__title">Card Traders</h3>
+          <p class="audience-card__body">Log in-person trades with card details, meetup time, location, and price. Get a push reminder the day before, then share a styled trade card in any messaging app.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section id="features" class="features section">
+    <div class="container">
+
+      <header class="section-header" data-animate="fade-up">
+        <p class="section-header__label">What's Inside</p>
+        <h2 class="section-header__title">Everything You Need to Dominate</h2>
+        <p class="section-header__body">Six core tools, all free to start — built for competitive and casual Riftbound players.</p>
+      </header>
+
+      <div class="features__grid">
+
+        <article class="feature-card" data-animate="fade-up">
+          <div class="feature-card__icon-wrap" aria-hidden="true">
+            <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="8" height="11" rx="1"/>
+              <rect x="14" y="3" width="8" height="11" rx="1"/>
+              <rect x="5" y="17" width="14" height="4" rx="1"/>
+              <line x1="9" y1="8" x2="15" y2="8"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Match Score Tracker</h3>
+          <p class="feature-card__body">Real-time scoring for Best-of-1 and Best-of-3 matches. Pick your legend and battlefield, tap to score, and let the app track game wins, determine the series winner, and save the full match record automatically.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up">
+          <div class="feature-card__icon-wrap" aria-hidden="true">
+            <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="9" rx="1"/>
+              <rect x="14" y="3" width="7" height="9" rx="1"/>
+              <rect x="3" y="15" width="7" height="6" rx="1"/>
+              <rect x="14" y="15" width="7" height="6" rx="1"/>
+              <line x1="10" y1="6" x2="14" y2="6"/>
+              <line x1="10" y1="8" x2="14" y2="8"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Card Database Browser</h3>
+          <p class="feature-card__body">Search the full Riftbound card pool by name, domain (Fury, Body, Calm, Mind, Order, Chaos), card type, and rarity. Tap any card for its full art, cost, power, rules text, and flavor text.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up">
+          <div class="feature-card__icon-wrap" aria-hidden="true">
+            <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <polyline points="12 7 12 12 15.5 15.5"/>
+              <line x1="7" y1="2" x2="10" y2="5"/>
+              <line x1="17" y1="2" x2="14" y2="5"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Deck Builder &amp; Analytics</h3>
+          <p class="feature-card__body">Build decks with full rule enforcement — 1 legend, 1 champion, up to 3 battlefields, 12 runes, 40 main deck cards, and an 8-card sideboard. Domain-locked filtering keeps only legal cards visible. Export your deck in UVS format, ready to share and play immediately at any Skirmish event.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up">
+          <div class="feature-card__icon-wrap" aria-hidden="true">
+            <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+              <rect x="3" y="20" width="18" height="0.5"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Match History &amp; Analytics</h3>
+          <p class="feature-card__body">Every match saved automatically — filterable by wins or losses, with overall win rate at a glance. Premium unlocks unlimited history, match editing, advanced stats by legend and battlefield, and a full matchup matrix.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up">
+          <div class="feature-card__icon-wrap" aria-hidden="true">
+            <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 16l-4-4 4-4"/>
+              <path d="M17 8l4 4-4 4"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <rect x="9" y="9" width="6" height="6" rx="1"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Trade Manager</h3>
+          <p class="feature-card__body">Schedule in-person card trades with a name, card list, meetup date and location, price, and notes. Get a push notification the day before. Share trade details as text or as a styled image card — perfect for messaging apps.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up">
+          <div class="feature-card__icon-wrap" aria-hidden="true">
+            <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Premium — One-Time Unlock</h3>
+          <p class="feature-card__body">Upgrade once, own it forever. Unlock unlimited match history, match editing, unlimited deck slots, full deck analytics, advanced win rate breakdowns by legend and battlefield, and the matchup matrix. One-time purchase of $2.99 — no subscription, ever.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SCREENSHOTS ===================== -->
+  <section id="screenshots" class="screenshots section">
+    <div class="container">
+      <header class="section-header" data-animate="fade-up">
+        <p class="section-header__label">App Preview</p>
+        <h2 class="section-header__title">See It in Action</h2>
+        <p class="section-header__body">Every screen, built for speed and clarity at the table.</p>
+      </header>
+    </div>
+
+    <div class="screenshots__carousel-wrap">
+      <div class="carousel" id="screenshots-carousel" role="region" aria-label="App screenshots" aria-live="polite">
+        <div class="carousel__track" id="carousel-track">
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 1 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/1.jpg" alt="Riftbound Companion screen 1" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 2 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/2.jpg" alt="Riftbound Companion screen 2" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 3 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/3.jpg" alt="Riftbound Companion screen 3" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 4 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/4.jpg" alt="Riftbound Companion screen 4" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 5 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/5.jpg" alt="Riftbound Companion screen 5" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 6 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/6.jpg" alt="Riftbound Companion screen 6" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 7 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/7.jpg" alt="Riftbound Companion screen 7" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 8 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/8.jpg" alt="Riftbound Companion screen 8" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 9 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/9.jpg" alt="Riftbound Companion screen 9" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 10 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/10.jpg" alt="Riftbound Companion screen 10" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 11 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/11.jpg" alt="Riftbound Companion screen 11" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="Screenshot 12 of 12">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch" aria-hidden="true"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/caroussel/12.png" alt="Riftbound Companion screen 12" loading="lazy">
+                </div>
+                <div class="phone-mockup__home-bar" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="carousel__btn carousel__btn--prev" id="carousel-prev" aria-label="Previous screenshot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+      <button class="carousel__btn carousel__btn--next" id="carousel-next" aria-label="Next screenshot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+
+      <div class="carousel__dots" id="carousel-dots" role="tablist" aria-label="Screenshot navigation"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SCENARIOS ===================== -->
+  <section id="scenarios" class="scenarios section">
+    <div class="container">
+
+      <header class="section-header" data-animate="fade-up">
+        <p class="section-header__label">Real Use Cases</p>
+        <h2 class="section-header__title">Built for Real Moments at the Table</h2>
+        <p class="section-header__body">Every feature was designed around how Riftbound players actually play, build, and trade.</p>
+      </header>
+
+      <div class="scenarios__grid">
+
+        <article class="scenario-card" data-animate="fade-up">
+          <p class="scenario-card__eyebrow">Match Score Tracker</p>
+          <h3 class="scenario-card__title">Score any match, at any table</h3>
+          <p class="scenario-card__narrative">Two friends sit down at a local game store for a Best-of-3. They open Riftbound Companion, pick their legends and a battlefield, and tap to score points. The app tracks individual game wins within the series, determines the overall winner, and saves the full match record automatically.</p>
+          <ul class="scenario-card__features">
+            <li>Best-of-1 &amp; Best-of-3 formats</li>
+            <li>Configurable win conditions (7, 8, 9, or 10 points)</li>
+            <li>Legend &amp; battlefield picker with searchable database</li>
+            <li>Haptic feedback &middot; Auto-save</li>
+          </ul>
+        </article>
+
+        <article class="scenario-card" data-animate="fade-up">
+          <p class="scenario-card__eyebrow">Match History &amp; Analytics</p>
+          <h3 class="scenario-card__title">Review every game you've played</h3>
+          <p class="scenario-card__narrative">A player has been grinding matches all week and wants to see how they're performing. They open match history, filter by wins to review their best games, check their overall win rate, and edit a match from yesterday where they accidentally selected the wrong legend.</p>
+          <ul class="scenario-card__features">
+            <li>Chronological match log with win/loss indicators</li>
+            <li>Win rate calculation &amp; display</li>
+            <li>Filter by outcome (wins, losses, all)</li>
+            <li>Edit &amp; delete past matches <span class="tag-premium">Premium</span></li>
+          </ul>
+        </article>
+
+        <article class="scenario-card" data-animate="fade-up">
+          <p class="scenario-card__eyebrow">Card Database Browser</p>
+          <h3 class="scenario-card__title">Look up any card, instantly</h3>
+          <p class="scenario-card__narrative">A player hears about a card during a stream and wants to look it up. They search by name, find it in seconds, and tap for full art, cost, power, rules text, and flavor text. Another player wants to browse all Epic Fury spells to find options for a new deck idea.</p>
+          <ul class="scenario-card__features">
+            <li>Search by name, domain, type, and rarity</li>
+            <li>Full card detail view with art &amp; flavor text</li>
+            <li>Paginated browsing (20 cards per page)</li>
+            <li>24-hour local cache for offline access</li>
+          </ul>
+        </article>
+
+        <article class="scenario-card" data-animate="fade-up">
+          <p class="scenario-card__eyebrow">Deck Builder &amp; Analytics</p>
+          <h3 class="scenario-card__title">Build and analyze your decks</h3>
+          <p class="scenario-card__narrative">A player wants to build a new deck around a specific legend. The app filters the card pool to only cards in that legend's domains. They pick a champion, add battlefields and runes, fill out the main deck and sideboard — then pull up analytics to review the rune curve and power distribution before a tournament.</p>
+          <ul class="scenario-card__features">
+            <li>Full deck rule enforcement (legend, champion, battlefields, runes)</li>
+            <li>Domain-locked card filtering</li>
+            <li>Create, rename, and delete decks</li>
+            <li>Export in UVS format — ready to play at Skirmish events</li>
+            <li>Deck analytics: curve, power, type &amp; domain <span class="tag-premium">Premium</span></li>
+          </ul>
+        </article>
+
+        <article class="scenario-card scenario-card--wide" data-animate="fade-up">
+          <p class="scenario-card__eyebrow">Trade Manager</p>
+          <h3 class="scenario-card__title">Never miss an in-person trade</h3>
+          <p class="scenario-card__narrative">Two players agree on a card trade at a local meetup next Saturday. One player creates a trade entry with the other player's name, adds the cards being exchanged, sets the meetup date, time, and location, and notes the agreed price. The app schedules a push notification reminder for the day before. When they're ready to meet, they share a trade summary card — as an image or text — so both parties have the details confirmed.</p>
+          <ul class="scenario-card__features">
+            <li>Cards, trader name, meetup details, price &amp; notes</li>
+            <li>Push notification reminder one day before</li>
+            <li>Share as formatted text or styled image card</li>
+            <li>Optional e-transfer email on shared trade cards</li>
+            <li>Trade status tracking: Upcoming, Completed, Cancelled</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEEP DIVE ===================== -->
+  <section id="deep-dive" class="deep-dive section">
+    <div class="container">
+
+      <div class="deep-dive__grid">
+
+        <article class="trust-card" data-animate="fade-up">
+          <div class="trust-card__icon-wrap" aria-hidden="true">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="1" y1="1" x2="23" y2="23"/>
+              <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+              <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+              <path d="M10.71 5.05A16 16 0 0 1 22.56 9"/>
+              <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+              <line x1="12" y1="20" x2="12.01" y2="20"/>
+            </svg>
+          </div>
+          <h3 class="trust-card__title">Works Offline</h3>
+          <p class="trust-card__body">Card data is cached locally for 24 hours. Browse the full database and use every app feature without a network connection — no signal required at the table.</p>
+        </article>
+
+        <article class="trust-card" data-animate="fade-up">
+          <div class="trust-card__icon-wrap" aria-hidden="true">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3 class="trust-card__title">No Account Required</h3>
+          <p class="trust-card__body">All match history, decks, and trade data is stored locally on your device using AsyncStorage. Nothing is sent to a server. Your data stays yours, on-device only.</p>
+        </article>
+
+        <article class="trust-card" data-animate="fade-up">
+          <div class="trust-card__icon-wrap" aria-hidden="true">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+          </div>
+          <h3 class="trust-card__title">Android 8.0+</h3>
+          <p class="trust-card__body">Lightweight and compatible with most modern Android devices. Free to download with no sign-up, no ads, and no paywalls to get started. Available on Google Play.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section id="pricing" class="pricing section">
+    <div class="container">
+
+      <header class="section-header" data-animate="fade-up">
+        <p class="section-header__label">Pricing</p>
+        <h2 class="section-header__title">Free to Start. One-Time Upgrade.</h2>
+        <p class="section-header__body">All core features are free. Unlock the full experience with a single lifetime purchase — no subscription, ever.</p>
+      </header>
+
+      <div class="pricing__table" data-animate="fade-up">
+
+        <div class="pricing-col pricing-col--free">
+          <div class="pricing-col__header">
+            <h3 class="pricing-col__tier">Free</h3>
+            <p class="pricing-col__price">$0</p>
+            <p class="pricing-col__sub">Always free</p>
+          </div>
+          <ul class="pricing-col__features">
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Match score tracker (all formats &amp; win conditions)
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Legend &amp; battlefield selection
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Automatic match saving
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Match history (10 most recent matches)
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Full card database browser
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Deck builder (3 deck slots)
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Trade manager, scheduling &amp; sharing
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Push notification trade reminders
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Settings &amp; personalization
+            </li>
+          </ul>
+          <a href="#download" class="btn btn--outline pricing-col__cta">Download Free</a>
+        </div>
+
+        <div class="pricing-col pricing-col--premium">
+          <div class="pricing-col__badge">Full Access</div>
+          <div class="pricing-col__header">
+            <h3 class="pricing-col__tier">Premium</h3>
+            <p class="pricing-col__price">$2.99</p>
+            <p class="pricing-col__sub">One-time &middot; Lifetime access &middot; No subscription</p>
+          </div>
+          <ul class="pricing-col__features">
+            <li class="pricing-feature-item pricing-feature-item--all">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Everything in Free
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Unlimited match history
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Edit past matches
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Unlimited deck slots
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Full deck analytics (curve, power, type &amp; domain)
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Advanced stats by legend &amp; battlefield
+            </li>
+            <li class="pricing-feature-item">
+              <svg class="pricing-feature-item__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143z" clip-rule="evenodd"/></svg>
+              Matchup matrix
+            </li>
+          </ul>
+          <p class="pricing-col__note">One-time purchase. No subscription, no recurring fees. Unlock everything forever.</p>
+          <a href="#download" class="btn btn--gold pricing-col__cta">Get Premium — $2.99</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOWNLOAD CTA ===================== -->
+  <section id="download" class="download-cta section" aria-labelledby="download-heading">
+    <div class="download-cta__bg-layer" aria-hidden="true">
+      <div class="download-cta__orb download-cta__orb--gold"></div>
+      <div class="download-cta__orb download-cta__orb--purple"></div>
+    </div>
+
+    <div class="container download-cta__inner">
+      <h2 class="download-cta__title" id="download-heading">Ready to Master the Rift?</h2>
+      <p class="download-cta__body">Free to download. No account required. No ads. All features available from day one.</p>
+
+      <div class="download-cta__badges">
+        <a href="#" class="store-badge store-badge--lg" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 170 48" xmlns="http://www.w3.org/2000/svg" class="store-badge__svg" aria-hidden="true">
+            <rect width="170" height="48" rx="7" fill="#12121a" stroke="#c9a84c" stroke-width="1.2"/>
+            <path d="M12 36L26 20 12 4v32z" fill="#c9a84c" opacity="0.6"/>
+            <path d="M30 24l-4 5-14-17 18 12z" fill="#c9a84c" opacity="0.9"/>
+            <path d="M30 24l-4-5-14 17 18-12z" fill="#c9a84c"/>
+            <path d="M12 4l18 20-4 0L12 4z" fill="#c9a84c" opacity="0.8"/>
+            <text x="44" y="18" font-family="Inter, sans-serif" font-size="9" fill="#8a8a9a" font-weight="400">Get it on</text>
+            <text x="44" y="33" font-family="Inter, sans-serif" font-size="16" fill="#f0ead6" font-weight="600">Google Play</text>
+          </svg>
+        </a>
+      </div>
+
+      <p class="download-cta__legal">Available on Android 8.0+. Free to download and use. Card data powered by the RiftCodex API.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#hero" class="navbar__logo footer__logo" aria-label="Riftbound Companion — back to top">
+          <img src="assets/adaptive-icon.png" class="navbar__logo-icon" alt="" aria-hidden="true">
+          <span class="navbar__logo-text">Riftbound <span class="navbar__logo-sub">Companion</span></span>
+        </a>
+        <p class="footer__tagline">The companion app for Riftbound players.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">In Action</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" class="social-icon" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Discord">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Reddit">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__disclaimer">
+      <div class="container">
+        <p>Riftbound Companion was created under Riot Games' <a href="https://www.riotgames.com/en/legal" target="_blank" rel="noopener noreferrer">Legal Jibber Jabber</a> policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project. Riftbound and all related marks, characters, and content are trademarks or registered trademarks of Riot Games, Inc.</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copyright">
+          &copy; 2026 Riftbound Companion. Independent fan project.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close viewer">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <line x1="2" y1="2" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18" y1="2" x2="2" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous screenshot">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="15 18 9 12 15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="lightbox__frame">
+      <img id="lightbox-img" class="lightbox__img" src="" alt="Screenshot">
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next screenshot">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="9 18 15 12 9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="lightbox__counter" id="lightbox-counter" aria-live="polite"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
